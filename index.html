@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atletismo - U.E. José Clemente Maurer</title>
+    <!-- Importamos la fuente desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- CABECERA Y NAVEGACIÓN -->
+    <header class="main-header">
+        <div class="logo-container">
+            <!-- Reemplaza 'escudo.png' con la ruta de tu imagen del escudo -->
+            <img src="cole.jpg" alt="Escudo U.E. José Clemente Maurer" class="logo">
+            <div class="school-info">
+                <h1>U.E. José Clemente Maurer</h1>
+                <p>Azari - Sucre | Fundado en 1965</p>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#categorias">Categorías</a></li>
+                <li><a href="#entrenamiento">Entrenamiento</a></li>
+                <li><a href="#evaluacion">Evaluación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECCIÓN DE BIENVENIDA -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <h2>Domina el Arte del Atletismo</h2>
+                <p>Plataforma oficial de enseñanza técnica y estrategias para estudiantes de la U.E. José Clemente Maurer.</p>
+                <a href="#categorias" class="btn-primary">Explorar Categorías</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE CATEGORÍAS Y TÉCNICAS -->
+        <section id="categorias" class="section-container">
+            <h2 class="section-title">Categorías y Técnicas</h2>
+            <div class="grid-container">
+                <!-- Tarjeta 1 -->
+                <div class="card" data-categoria="infantil">
+                    <h3>Infantil (6-11 años)</h3>
+                    <p>Desarrollo de la motricidad básica, juegos de velocidad y coordinación.</p>
+                    <button class="btn-card ver-tecnica" data-tecnica="juegos">Ver Técnica</button>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="card" data-categoria="cadetes">
+                    <h3>Cadetes (12-14 años)</h3>
+                    <p>Iniciación técnica en carreras, saltos y lanzamientos. Fase de aprendizaje.</p>
+                    <button class="btn-card ver-tecnica" data-tecnica="saltos">Ver Técnica</button>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="card" data-categoria="juveniles">
+                    <h3>Juveniles (15-17 años)</h3>
+                    <p>Perfeccionamiento técnico, tácticas de carrera y entrenamiento de fuerza.</p>
+                    <button class="btn-card ver-tecnica" data-tecnica="velocidad">Ver Técnica</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE VIDEO Y DETALLES (Se actualiza con JS) -->
+        <section id="detalle-tecnica" class="section-container hidden">
+            <h2 class="section-title" id="titulo-tecnica">Técnica Seleccionada</h2>
+            <div class="video-wrapper">
+                <!-- El iframe se cargará dinámicamente -->
+                <iframe id="video-player" src="" title="Video de Atletismo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="tecnica-detalles">
+                <h3>Puntos Clave de la Técnica</h3>
+                <ul id="lista-tecnica">
+                    <!-- Se llena con JS -->
+                </ul>
+                <h3>Estrategia</h3>
+                <p id="texto-estrategia"></p>
+            </div>
+            <button class="btn-secondary" id="cerrar-detalle">Cerrar</button>
+        </section>
+
+        <!-- SECCIÓN DE MÉTODOS DE ENTRENAMIENTO -->
+        <section id="entrenamiento" class="section-container bg-light">
+            <h2 class="section-title">Métodos de Entrenamiento</h2>
+            <div class="grid-container">
+                <div class="card method-card">
+                    <h3>Método Continuo</h3>
+                    <p>Ideal para resistencia aeróbica. Carreras largas a ritmo constante.</p>
+                </div>
+                <div class="card method-card">
+                    <h3>Método Fraccionado</h3>
+                    <p>Intervalos de alta intensidad con pausas de recuperación.</p>
+                </div>
+                <div class="card method-card">
+                    <h3>Pliometría</h3>
+                    <p>Saltos y rebotes para mejorar la potencia muscular y explosividad.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE EVALUACIÓN (QUIZ INTERACTIVO) -->
+        <section id="evaluacion" class="section-container">
+            <h2 class="section-title">Pon a Prueba tus Conocimientos</h2>
+            <div class="quiz-container">
+                <p id="pregunta-texto">¿Cuál es el ángulo ideal de despegue en el salto de longitud?</p>
+                <div class="opciones" id="opciones-container">
+                    <!-- Botones generados por JS -->
+                </div>
+                <p id="resultado-quiz" class="resultado"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Unidad Educativa José Clemente Maurer - Azari, Sucre. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
